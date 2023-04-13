@@ -1,1 +1,90 @@
-const _0x1c40f3=_0x4f96;function _0xd59f(){const _0x1631a2=['DANGER','`\x20which\x20is\x20owned\x20by\x20','catch','Account\x20Blocked\x20','This\x20interaction\x20is\x20not\x20fot\x20you!','5ERNcVP','5625822dLoIMX','6878QdupCg','helps\x20you\x20see\x20the\x20last\x20message\x20which\x20got\x20deleted','adminrole','Are\x20you\x20sure\x20you\x20want\x20to\x20block\x20','delete','1623624fljIww','then','exports','reply','setDisabled','20jdlnnl','embedColour','setLabel','edit','10788390FQieaD','acreate\x20`tag_here`','This\x20Tag\x20Is\x20Not\x20In\x20Use','fetch','tag','discord.js','get','10283350qNjZih','\x20-\x20`','set','cache','roles','EMBED_LINKS','config','accountlog','\x20By\x20','channels','1263MeOzAE','8jtDBAk','YES','block','guild','block_success','messageDelete','Account','member','end','1881539lXOXbE','521750UyhnkC','setStyle','collect','user','block_cancel','setCustomId','customId','author','tag_use','quick.db','MessageEmbed','This\x20user\x20is\x20alredy\x20blocked','message'];_0xd59f=function(){return _0x1631a2;};return _0xd59f();}function _0x4f96(_0x1b642d,_0x5d2ed2){const _0xd59fa4=_0xd59f();return _0x4f96=function(_0x4f9683,_0x4929c3){_0x4f9683=_0x4f9683-0x18d;let _0x154ad3=_0xd59fa4[_0x4f9683];return _0x154ad3;},_0x4f96(_0x1b642d,_0x5d2ed2);}(function(_0x3a13f6,_0x5d9f03){const _0x3ee7c0=_0x4f96,_0x4a4f08=_0x3a13f6();while(!![]){try{const _0x4dc3a8=-parseInt(_0x3ee7c0(0x19d))/0x1+-parseInt(_0x3ee7c0(0x1b1))/0x2*(-parseInt(_0x3ee7c0(0x192))/0x3)+parseInt(_0x3ee7c0(0x1b6))/0x4*(-parseInt(_0x3ee7c0(0x1af))/0x5)+parseInt(_0x3ee7c0(0x1b0))/0x6+-parseInt(_0x3ee7c0(0x1c6))/0x7*(parseInt(_0x3ee7c0(0x193))/0x8)+parseInt(_0x3ee7c0(0x1bf))/0x9+-parseInt(_0x3ee7c0(0x1bb))/0xa*(parseInt(_0x3ee7c0(0x19c))/0xb);if(_0x4dc3a8===_0x5d9f03)break;else _0x4a4f08['push'](_0x4a4f08['shift']());}catch(_0x2c494e){_0x4a4f08['push'](_0x4a4f08['shift']());}}}(_0xd59f,0xce632));const discord=require(_0x1c40f3(0x1c4)),{MessageButton,MessageActionRow}=require(_0x1c40f3(0x1c4)),db=require(_0x1c40f3(0x1a6));module[_0x1c40f3(0x1b8)]={'name':_0x1c40f3(0x195),'description':_0x1c40f3(0x1b2),'category':_0x1c40f3(0x199),'usage':_0x1c40f3(0x1c0),'usage':'acreate\x20`tag_here`','botPermissions':[_0x1c40f3(0x18d)],'userPermissions':[],async 'run'(_0x441037,_0x584fac,_0x2b1c80){const _0x365c36=_0x1c40f3;if(!_0x584fac[_0x365c36(0x19a)][_0x365c36(0x1ca)][_0x365c36(0x1c9)][_0x365c36(0x1c5)](_0x441037['config'][_0x365c36(0x1b3)]))return _0x584fac[_0x365c36(0x1b9)]('This\x20Command\x20Is\x20For\x20Admins\x20Only!');;if(!_0x2b1c80[0x0])return _0x584fac[_0x365c36(0x1b9)]('You\x20forgot\x20to\x20mention\x20the\x20tag');;let _0x1c663b=db['get'](_0x2b1c80[0x0]),_0x291a27=db[_0x365c36(0x1c5)]('block'+_0x2b1c80[0x0]);if(_0x1c663b!==!![])return _0x584fac[_0x365c36(0x1b9)](_0x365c36(0x1c1));;if(_0x291a27===!![])return _0x584fac[_0x365c36(0x1b9)](_0x365c36(0x1a8));;const _0x45a1fb=new MessageButton()[_0x365c36(0x19e)]('SUCCESS')[_0x365c36(0x1bd)](_0x365c36(0x194))[_0x365c36(0x1a2)]('block_success')['setDisabled'](![]),_0x4b24ab=new MessageButton()[_0x365c36(0x19e)](_0x365c36(0x1aa))['setLabel']('NO')[_0x365c36(0x1a2)](_0x365c36(0x1a1))['setDisabled'](![]),_0x4597a8=new MessageActionRow()['addComponents'](_0x45a1fb,_0x4b24ab);let _0x4f7be1=await _0x584fac[_0x365c36(0x1b9)]({'content':_0x365c36(0x1b4)+_0x2b1c80[0x0]+'\x20!','components':[_0x4597a8]}),_0x1dd8bc=_0x4f7be1['createMessageComponentCollector']({'time':0x7530});_0x1dd8bc['on'](_0x365c36(0x19f),async _0x64be6c=>{const _0x2ff6cc=_0x365c36;if(_0x64be6c[_0x2ff6cc(0x1a0)]['id']!==_0x584fac[_0x2ff6cc(0x1a4)]['id'])return _0x64be6c['reply']({'ephemeral':!![],'content':_0x2ff6cc(0x1ae)});;if(_0x64be6c[_0x2ff6cc(0x1a3)]===_0x2ff6cc(0x197)){db[_0x2ff6cc(0x1c8)]('block'+_0x2b1c80[0x0],!![]);let _0x5de6af=db[_0x2ff6cc(0x1c5)]('acc_user'+_0x2b1c80[0x0]),_0x5cecd8=await _0x584fac[_0x2ff6cc(0x196)]['members'][_0x2ff6cc(0x1c2)](_0x5de6af),_0x4db40e=_0x441037[_0x2ff6cc(0x191)]['cache'][_0x2ff6cc(0x1c5)](_0x441037[_0x2ff6cc(0x18e)][_0x2ff6cc(0x18f)]);return _0x4db40e['send']({'embeds':[new discord[(_0x2ff6cc(0x1a7))]({'description':_0x2ff6cc(0x1ad)+_0x2b1c80[0x0]+_0x2ff6cc(0x190)+_0x584fac[_0x2ff6cc(0x1a4)]+'\x20-\x20`'+_0x584fac['author'][_0x2ff6cc(0x1a5)]+_0x2ff6cc(0x1ab)+_0x5cecd8+_0x2ff6cc(0x1c7)+_0x5cecd8[_0x2ff6cc(0x1a0)][_0x2ff6cc(0x1c3)]+'`','color':_0x441037['config'][_0x2ff6cc(0x1bc)]})]}),_0x584fac[_0x2ff6cc(0x1b9)]({'content':_0x2ff6cc(0x1ad)+_0x2b1c80[0x0]})&&setTimeout(()=>_0x64be6c['message'][_0x2ff6cc(0x1b5)]()[_0x2ff6cc(0x1ac)](()=>null),0x64);};if(_0x64be6c[_0x2ff6cc(0x1a3)]===_0x2ff6cc(0x1a1))return _0x64be6c[_0x2ff6cc(0x1a9)][_0x2ff6cc(0x1b5)]()&&_0x584fac[_0x2ff6cc(0x1b5)]();;}),_0x1dd8bc['on'](_0x365c36(0x19b),(_0x210533,_0x453ff9)=>{const _0x3a770b=_0x365c36;if(_0x453ff9!==_0x3a770b(0x198))return _0x45a1fb[_0x3a770b(0x1ba)](!![]),_0x4b24ab[_0x3a770b(0x1ba)](!![]),_0x4f7be1[_0x3a770b(0x1be)]({'content':'**`[Command\x20Timed\x20Out]`**','components':[_0x4597a8]})[_0x3a770b(0x1b7)](_0x19ecfd=>setTimeout(()=>_0x19ecfd[_0x3a770b(0x1b5)]()[_0x3a770b(0x1ac)](()=>null),0x1388));;});}};
+const discord = require("discord.js"),
+    { MessageButton, MessageActionRow } = require('discord.js'),
+    db = require(`quick.db`);
+
+module.exports = {
+    name: "block",
+    //  aliases: ["accountc", "acreate"],
+    description: "helps you see the last message which got deleted",
+    category: "Account",
+    usage: "acreate `tag_here`",
+    usage: "acreate `tag_here`",
+    botPermissions: ["EMBED_LINKS"],
+    userPermissions: [],
+
+    async run(client, message, args) {
+        if (!message.member.roles.cache.get(client.config.adminrole)) {
+            return message.reply("This Command Is For Admins Only!")
+        };
+
+        if (!args[0]) {
+            return message.reply("You forgot to mention the tag")
+        };
+
+        let tag_use = db.get(args[0]),
+            tag_block = db.get(`block${args[0]}`);
+
+        if (tag_use !== true) {
+            return message.reply("This Tag Is Not In Use");
+        };
+        if (tag_block === true) {
+            return message.reply(`This user is alredy blocked`);
+        };
+
+        const button = new MessageButton()
+            .setStyle("SUCCESS")
+            .setLabel("YES")
+            .setCustomId("block_success")
+            .setDisabled(false),
+            button1 = new MessageButton()
+                .setStyle("DANGER")
+                .setLabel("NO")
+                .setCustomId("block_cancel")
+                .setDisabled(false),
+            row = new MessageActionRow()
+                .addComponents(button, button1);
+
+        let msg = await message.reply({ content: `Are you sure you want to block ${args[0]} !`, components: [row] }),
+            collector = msg.createMessageComponentCollector({ time: 30000 });
+
+        collector.on("collect", async (button) => {
+
+            if (button.user.id !== message.author.id) {
+                return button.reply({ ephemeral: true, content: `This interaction is not fot you!` });
+            };
+
+            if (button.customId === "block_success") {
+
+                // database update
+                db.set(`block${args[0]}`, true);
+                let acc_user = db.get(`acc_user${args[0]}`);
+                let owner = await message.guild.members.fetch(acc_user);
+                let log = client.channels.cache.get(client.config.accountlog);
+                log.send({
+                    embeds: [
+                        new discord.MessageEmbed({
+                            description: `Account Blocked ${args[0]} By ${message.author} - \`${message.author.tag_use}\` which is owned by ${owner} - \`${owner.user.tag}\``,
+                            color: client.config.embedColour
+                        })
+                    ]
+                });
+
+                return message.reply({ content: `Account Blocked ${args[0]}` }) &&
+                    setTimeout(() => button.message.delete().catch(() => null), 100);
+            };
+
+            if (button.customId === 'block_cancel') {
+                return button.message.delete() && message.delete();
+            };
+
+        });
+        collector.on("end", (_, reason) => {
+            if (reason !== "messageDelete") {
+                button.setDisabled(true);
+                button1.setDisabled(true);
+                return msg.edit({ content: "**`[Command Timed Out]`**", components: [row] })
+                    .then(m => setTimeout(() => m.delete().catch(() => null), 5000));
+            };
+        });
+    }
+};

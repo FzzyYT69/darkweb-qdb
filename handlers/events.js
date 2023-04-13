@@ -1,1 +1,27 @@
-const _0x20802a=_0x63cb;function _0x23a8(){const _0x10816c=['addRow','run','166986zUEgxn','.js','213455PdQBLZ','toString','exports','string','48036eggoIe','setHeading','959812dwoUZO','329889JmAIzb','filter','Events','Event\x20Name','❌\x20->\x20Property\x20event\x20should\x20be\x20string.','ascii-table','endsWith','event','237750FxRbnF','Loaded\x20Status','bind','log','184441ahYypC'];_0x23a8=function(){return _0x10816c;};return _0x23a8();}(function(_0x39771c,_0x303bfd){const _0x5c1f95=_0x63cb,_0x19468b=_0x39771c();while(!![]){try{const _0x120a22=parseInt(_0x5c1f95(0x9a))/0x1+-parseInt(_0x5c1f95(0x85))/0x2+-parseInt(_0x5c1f95(0x8e))/0x3+-parseInt(_0x5c1f95(0x8b))/0x4+parseInt(_0x5c1f95(0x87))/0x5+-parseInt(_0x5c1f95(0x96))/0x6+parseInt(_0x5c1f95(0x8d))/0x7;if(_0x120a22===_0x303bfd)break;else _0x19468b['push'](_0x19468b['shift']());}catch(_0x44b05e){_0x19468b['push'](_0x19468b['shift']());}}}(_0x23a8,0x1d176));const {readdirSync}=require('fs'),ascii=require(_0x20802a(0x93));function _0x63cb(_0x42e919,_0xc35ea2){const _0x23a802=_0x23a8();return _0x63cb=function(_0x63cb3d,_0x4820a8){_0x63cb3d=_0x63cb3d-0x84;let _0x15559b=_0x23a802[_0x63cb3d];return _0x15559b;},_0x63cb(_0x42e919,_0xc35ea2);}let table=new ascii(_0x20802a(0x90));table[_0x20802a(0x8c)](_0x20802a(0x91),_0x20802a(0x97)),module[_0x20802a(0x89)]=_0x2d69b3=>{const _0x59600d=_0x20802a,_0x59efe3=readdirSync('./events/')[_0x59600d(0x8f)](_0x77fc48=>_0x77fc48[_0x59600d(0x94)](_0x59600d(0x86)));for(let _0x4bdfa7 of _0x59efe3){try{let _0x47eb5b=require('../events/'+_0x4bdfa7);if(_0x47eb5b[_0x59600d(0x95)]&&typeof _0x47eb5b[_0x59600d(0x95)]!==_0x59600d(0x8a)){table['addRow'](_0x4bdfa7,_0x59600d(0x92));continue;}_0x47eb5b['event']=_0x47eb5b[_0x59600d(0x95)]||_0x4bdfa7['replace'](_0x59600d(0x86),''),_0x2d69b3['on'](_0x47eb5b[_0x59600d(0x95)],_0x47eb5b[_0x59600d(0x84)][_0x59600d(0x98)](null,_0x2d69b3)),table[_0x59600d(0x9b)](_0x4bdfa7,'♻️\x20\x20=>\x20no\x20error.!');}catch(_0x27cbdf){console['log'](''),console['log'](_0x27cbdf),table['addRow'](_0x4bdfa7,'☠️\x20\x20=>\x20error.!');}}console[_0x59600d(0x99)](table[_0x59600d(0x88)]()['green']);};
+const { readdirSync } = require("fs"),
+    ascii = require("ascii-table");
+
+let table = new ascii("Events");
+
+table.setHeading("Event Name", "Loaded Status");
+module.exports = client => {
+    const events = readdirSync(`./events/`).filter(file => file.endsWith(".js"));
+
+    for (let file of events) {
+        try {
+            let pull = require(`../events/${file}`);
+            if (pull.event && typeof pull.event !== "string") {
+                table.addRow(file, `❌ -> Property event should be string.`);
+                continue;
+            }
+            pull.event = pull.event || file.replace(".js", "");
+            client.on(pull.event, pull.run.bind(null, client));
+            table.addRow(file, "♻️  => no error.!");
+        } catch (err) {
+            console.log("");
+            console.log(err);
+            table.addRow(file, `☠️  => error.!`);
+        }
+    }
+    console.log(table.toString().green);
+};

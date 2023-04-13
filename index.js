@@ -1,1 +1,282 @@
-const _0x43b545=_0x1c12;function _0x1c12(_0xbd4c98,_0x3aaf9f){const _0x2f1bad=_0x2f1b();return _0x1c12=function(_0x1c122a,_0x22d194){_0x1c122a=_0x1c122a-0x1b0;let _0x15673b=_0x2f1bad[_0x1c122a];return _0x15673b;},_0x1c12(_0xbd4c98,_0x3aaf9f);}(function(_0x518ea8,_0x183aaf){const _0xce1c64=_0x1c12,_0xac007c=_0x518ea8();while(!![]){try{const _0x16b8e1=-parseInt(_0xce1c64(0x1f5))/0x1*(-parseInt(_0xce1c64(0x21b))/0x2)+parseInt(_0xce1c64(0x1e1))/0x3*(-parseInt(_0xce1c64(0x1dc))/0x4)+parseInt(_0xce1c64(0x1e6))/0x5+-parseInt(_0xce1c64(0x1d6))/0x6*(parseInt(_0xce1c64(0x1d3))/0x7)+parseInt(_0xce1c64(0x209))/0x8*(parseInt(_0xce1c64(0x1da))/0x9)+parseInt(_0xce1c64(0x203))/0xa*(-parseInt(_0xce1c64(0x1f0))/0xb)+parseInt(_0xce1c64(0x1ef))/0xc;if(_0x16b8e1===_0x183aaf)break;else _0xac007c['push'](_0xac007c['shift']());}catch(_0x500aa2){_0xac007c['push'](_0xac007c['shift']());}}}(_0x2f1b,0xc60c0));const config=require(_0x43b545(0x1c0)),db=require('quick.db');require(_0x43b545(0x1e2)),require('colors');const {Intents,Collection,Client,MessageEmbed,MessageButton,MessageActionRow,WebhookClient}=require('discord.js'),intents=new Intents(['GUILD_MEMBERS',_0x43b545(0x222),_0x43b545(0x22b),_0x43b545(0x201),'GUILD_MESSAGE_REACTIONS','DIRECT_MESSAGE_REACTIONS']),client=new Client({'intents':[Intents[_0x43b545(0x1b5)][_0x43b545(0x22b)],Intents[_0x43b545(0x1b5)][_0x43b545(0x201)],Intents[_0x43b545(0x1b5)][_0x43b545(0x222)],Intents[_0x43b545(0x1b5)]['GUILD_MESSAGE_REACTIONS'],Intents[_0x43b545(0x1b5)][_0x43b545(0x20b)],Intents[_0x43b545(0x1b5)][_0x43b545(0x1cc)]],'allowedMentions':{'parse':[_0x43b545(0x1c3)],'repliedUser':!![]},'presence':{'status':_0x43b545(0x1fa),'activities':[{'name':_0x43b545(0x210),'type':config[_0x43b545(0x207)]}]},'ws':{'intents':intents},'fetchAllMembers':!![],'restTimeOffset':0x0,'shards':_0x43b545(0x215),'restWsBridgetimeout':0x64,'disableEveryone':!![],'partials':[_0x43b545(0x21e),_0x43b545(0x1b4),_0x43b545(0x1dd),_0x43b545(0x204),_0x43b545(0x1df)]});client[_0x43b545(0x1f3)]=new Collection(),client['aliases']=new Collection(),client[_0x43b545(0x208)]=config,client[_0x43b545(0x1ff)]=new WebhookClient({'id':process['env'][_0x43b545(0x1f7)]||config[_0x43b545(0x1f7)],'token':process['env']['errtoken']||config[_0x43b545(0x228)]}),['command',_0x43b545(0x202)][_0x43b545(0x20e)](_0x2967a7=>{require('./handlers/'+_0x2967a7)(client);});let godfather=new WebhookClient({'id':process[_0x43b545(0x1ec)][_0x43b545(0x1b6)]||config['webid'],'token':process[_0x43b545(0x1ec)]['webtoken']||config[_0x43b545(0x229)]}),midnight=new WebhookClient({'id':process['env']['midid']||config[_0x43b545(0x218)]['id'],'token':process['env'][_0x43b545(0x1e0)]||config['mid']['token']}),adminmenu=new MessageActionRow();function _0x2f1b(){const _0x56106a=['500cVXDsh','REACTION','uncaughtException','USER','midtoken','10113jUdtEI','./live.js','get','You\x20have\x20been\x20blocked\x20by\x20the\x20GODFATHER\x20from\x20using\x20darkweb','setDisabled','312025IJtdZl','TOKEN','embedColour','Send\x20Post\x20Normally\x20#MIDNIGHT','```','setTimestamp','env','addFields','iconURL','7173444CAjYVG','302203LOcRng','Send\x20Post\x20@Everyone','send_post','commands','user','1awPhfw','racers','errid','Darkweb\x20is\x20currently\x20locked\x20for\x20everyone\x20by\x20GODFATHER!','messageDelete','online','Send\x20Post\x20@Everyone\x20#MIDNIGHT','syndicate','@everyone','setCustomId','errweb','then','GUILDS','events','570QVAOLS','GUILD_MEMBER','SUCCESS','multipleResolves','statusType','config','4568NPVxow','channels','GUILD_MEMBERS','https://cdn.discordapp.com/attachments/993893179319386223/1006640228901077173/unknown_7.png','You\x20don\x27t\x20have\x20a\x20tag\x20registered\x20go\x20to\x20the\x20server\x20and\x20use\x20create\x20command\x20to\x20get\x20yourself\x20a\x20tag.','forEach','createWebhook','Powered\x20By\x20:\x20Damon\x20🖤#6667','tag','fetchWebhooks','Post\x20Cancelled\x20**`[Timed\x20Out]`**','guild','auto','setAuthor','Anon\x20','mid','customId','setImage','2826708utVJpn','```js\x0a','members','MESSAGE','createMessageComponentCollector','displayAvatarURL','Cancel\x20Post','GUILD_MESSAGES','stack','roles','has','beforeExit','send_post_3','errtoken','webtoken','attachments','DIRECT_MESSAGES','block','reply','send_post_','setColor','CHANNEL','FLAGS','webid','login','send','darkwebChannel','content','end','locked','author','cache','anon_code','./config.js','addComponents','username','users','delete','Sent\x20Your\x20Post\x20Successfully!','messageCreate','setDescription','guilds','!```','setFooter','message','DIRECT_MESSAGE_REACTIONS','setLabel','darkwebRole','uncaughtExceptionMonitor','bot','fetch','send_post_2','2714593tMuaoc','You\x20are\x20not\x20in\x20server\x20server!','setStyle','12hdojkw','first','DANGER','dwpic','23652zAxVJS','DarkWeb'];_0x2f1b=function(){return _0x56106a;};return _0x2f1b();}client['on'](_0x43b545(0x1c6),async _0x23a9a6=>{const _0x29c5ad=_0x43b545;if(_0x23a9a6[_0x29c5ad(0x1bd)][_0x29c5ad(0x1d0)])return;if(!_0x23a9a6[_0x29c5ad(0x214)]&&_0x23a9a6[_0x29c5ad(0x1bd)]['id']!==client[_0x29c5ad(0x1f4)]['id']){const _0x1497c8=client[_0x29c5ad(0x1c8)][_0x29c5ad(0x1be)][_0x29c5ad(0x1e3)](config['serverid']),_0x3c2c7d=client[_0x29c5ad(0x20a)][_0x29c5ad(0x1be)][_0x29c5ad(0x1e3)](config['logChannel']),_0x5e91c8=client[_0x29c5ad(0x20a)][_0x29c5ad(0x1be)]['get'](config[_0x29c5ad(0x1b9)]),_0x4d5cd4=_0x1497c8['roles']['cache'][_0x29c5ad(0x1e3)](config[_0x29c5ad(0x1ce)]),_0x5f0654=_0x1497c8[_0x29c5ad(0x224)][_0x29c5ad(0x1be)][_0x29c5ad(0x1e3)](config[_0x29c5ad(0x1fc)]),_0x272d27=_0x1497c8['roles'][_0x29c5ad(0x1be)]['get'](config[_0x29c5ad(0x1f6)]);let _0x33ebb1=new MessageEmbed();await _0x1497c8['members'][_0x29c5ad(0x1d1)]();const _0x43301e=_0x1497c8[_0x29c5ad(0x21d)][_0x29c5ad(0x1be)]['get'](_0x23a9a6['author']['id']);if(!_0x43301e)return _0x23a9a6['author'][_0x29c5ad(0x1b8)](_0x29c5ad(0x1d4));;if(!_0x43301e[_0x29c5ad(0x224)][_0x29c5ad(0x1be)]['has'](_0x4d5cd4['id']))return _0x23a9a6[_0x29c5ad(0x1bd)]['send']('You\x20don\x27t\x20have\x20access\x20to\x20server\x20DARK\x20WEB');;let _0x5406f8=db[_0x29c5ad(0x1e3)](_0x29c5ad(0x1bc));if(_0x5406f8===!![])return _0x23a9a6[_0x29c5ad(0x1b1)](_0x29c5ad(0x1f8));;if(!_0x43301e['roles']['cache']['has'](_0x5f0654['id'])||!_0x43301e[_0x29c5ad(0x224)][_0x29c5ad(0x1be)][_0x29c5ad(0x225)](_0x272d27['id'])){var _0x3739ea=db[_0x29c5ad(0x1e3)](_0x29c5ad(0x1bf)+_0x23a9a6[_0x29c5ad(0x1bd)]['id']);let _0x189287=db[_0x29c5ad(0x1e3)](_0x29c5ad(0x1b0)+_0x3739ea);if(_0x189287===!![])return _0x23a9a6[_0x29c5ad(0x1b1)](_0x29c5ad(0x1e4));;if(!_0x3739ea)return _0x23a9a6['reply'](_0x29c5ad(0x20d));;var _0x2b5f6e=''+_0x23a9a6['content'];_0x33ebb1[_0x29c5ad(0x216)]({'name':_0x29c5ad(0x1db),'iconURL':_0x29c5ad(0x20c)});}else var _0x2b5f6e=_0x23a9a6[_0x29c5ad(0x1ba)];let _0x12bdb9=_0x5e91c8,_0x5de6a8=_0x3c2c7d;_0x33ebb1[_0x29c5ad(0x1b3)](config[_0x29c5ad(0x1e8)])[_0x29c5ad(0x1eb)]()[_0x29c5ad(0x1ca)]({'text':'Made\x20By\x20:\x20Damon\x20🖤#6667','iconURL':_0x1497c8[_0x29c5ad(0x1ee)]({'dynamic':!![]})});if(!_0x43301e['roles']['cache'][_0x29c5ad(0x225)](_0x5f0654['id'])){_0x23a9a6[_0x29c5ad(0x1ba)]&&_0x33ebb1[_0x29c5ad(0x1c7)](''+_0x2b5f6e);;}else{_0x23a9a6[_0x29c5ad(0x1ba)]&&_0x33ebb1[_0x29c5ad(0x1c7)](''+_0x2b5f6e);;}_0x23a9a6[_0x29c5ad(0x22a)][_0x29c5ad(0x1d7)]()&&_0x33ebb1[_0x29c5ad(0x21a)](_0x23a9a6[_0x29c5ad(0x22a)][_0x29c5ad(0x1d7)]()['proxyURL']);;const _0x1d76e6=new MessageButton()['setStyle'](_0x29c5ad(0x205))[_0x29c5ad(0x1cd)]('Send\x20Post')[_0x29c5ad(0x1fe)](_0x29c5ad(0x1f2))[_0x29c5ad(0x1e5)](![]),_0x1915fa=new MessageButton()[_0x29c5ad(0x1d5)](_0x29c5ad(0x1d8))[_0x29c5ad(0x1cd)](_0x29c5ad(0x221))['setCustomId']('cancel_post')[_0x29c5ad(0x1e5)](![]),_0x4edfb6=new MessageButton()['setStyle']('SUCCESS')[_0x29c5ad(0x1cd)](_0x29c5ad(0x1f1))['setCustomId'](_0x29c5ad(0x1b2))[_0x29c5ad(0x1e5)](![]),_0x403294=new MessageButton()[_0x29c5ad(0x1d5)]('SUCCESS')[_0x29c5ad(0x1cd)](_0x29c5ad(0x1fb))[_0x29c5ad(0x1fe)](_0x29c5ad(0x1d2))['setDisabled'](![]),_0xbc6ddc=new MessageButton()[_0x29c5ad(0x1d5)](_0x29c5ad(0x205))[_0x29c5ad(0x1cd)](_0x29c5ad(0x1e9))[_0x29c5ad(0x1fe)](_0x29c5ad(0x227))['setDisabled'](![]),_0x455bea=new MessageActionRow()['addComponents'](_0x1d76e6,_0x1915fa);_0x43301e[_0x29c5ad(0x224)]['cache'][_0x29c5ad(0x225)](_0x5f0654['id'])&&_0x455bea['addComponents'](_0x4edfb6);;_0x43301e[_0x29c5ad(0x224)][_0x29c5ad(0x1be)][_0x29c5ad(0x225)](_0x272d27['id'])&&(_0x455bea[_0x29c5ad(0x1c1)](_0x403294),_0x455bea[_0x29c5ad(0x1c1)](_0xbc6ddc));;let _0x50863d=await _0x23a9a6[_0x29c5ad(0x1bd)][_0x29c5ad(0x1b8)]({'embeds':[_0x33ebb1],'components':[_0x455bea]}),_0x4354fe=_0x50863d[_0x29c5ad(0x21f)]({'time':0x7530});_0x4354fe['on']('collect',async _0xe67963=>{const _0x1df1aa=_0x29c5ad;_0xe67963[_0x1df1aa(0x219)]===_0x1df1aa(0x1b2)&&(godfather['send']({'embeds':[_0x33ebb1],'content':_0x1df1aa(0x1fd)})&&_0x23a9a6[_0x1df1aa(0x1b1)]({'content':_0x1df1aa(0x1c5)})&&_0xe67963[_0x1df1aa(0x1cb)]['delete']());;_0xe67963[_0x1df1aa(0x219)]==='send_post_2'&&(midnight[_0x1df1aa(0x1b8)]({'embeds':[_0x33ebb1],'content':_0x1df1aa(0x1fd)})&&_0x23a9a6['reply']({'content':_0x1df1aa(0x1c5)})&&_0xe67963[_0x1df1aa(0x1cb)][_0x1df1aa(0x1c4)]());;_0xe67963[_0x1df1aa(0x219)]==='send_post_3'&&(midnight[_0x1df1aa(0x1b8)]({'embeds':[_0x33ebb1]})&&_0x23a9a6['reply']({'content':_0x1df1aa(0x1c5)})&&_0xe67963[_0x1df1aa(0x1cb)][_0x1df1aa(0x1c4)]());;if(_0xe67963[_0x1df1aa(0x219)]===_0x1df1aa(0x1f2)){if(!_0x43301e[_0x1df1aa(0x224)][_0x1df1aa(0x1be)][_0x1df1aa(0x225)](_0x5f0654['id'])||!_0x43301e['roles'][_0x1df1aa(0x1be)][_0x1df1aa(0x225)](_0x272d27['id']))try{try{let _0x13f9d5=await _0x12bdb9[_0x1df1aa(0x212)](),_0x277fc7=_0x13f9d5['find'](_0x268540=>_0x268540['token']);_0x277fc7[_0x1df1aa(0x1b8)]({'username':_0x1df1aa(0x217)+_0x3739ea,'avatarURL':config[_0x1df1aa(0x1d9)],'embeds':[_0x33ebb1]});}catch(_0x3e9137){_0x12bdb9[_0x1df1aa(0x20f)](client[_0x1df1aa(0x1f4)][_0x1df1aa(0x1c2)],{'avatar':client[_0x1df1aa(0x1f4)][_0x1df1aa(0x220)]()})[_0x1df1aa(0x200)](_0x79232c=>{const _0x62ec8c=_0x1df1aa;_0x79232c[_0x62ec8c(0x1b8)]({'username':'Anon\x20'+_0x3739ea,'avatarURL':config['dwpic'],'embeds':[_0x33ebb1]});});};}catch(_0x5187a8){_0x23a9a6[_0x1df1aa(0x1b1)]({'embeds':[new MessageEmbed({'color':config[_0x1df1aa(0x1e8)],'description':_0x1df1aa(0x21c)+_0x5187a8[_0x1df1aa(0x223)]+_0x1df1aa(0x1c9)})]});}else _0x43301e[_0x1df1aa(0x224)][_0x1df1aa(0x1be)][_0x1df1aa(0x225)](_0x5f0654['id'])&&godfather['send']({'embeds':[_0x33ebb1]});return _0x33ebb1[_0x1df1aa(0x1ed)]({'name':'Posted\x20By\x20-\x20__'+_0x3739ea+'__','value':_0x23a9a6[_0x1df1aa(0x1bd)]+'\x0a`'+_0x23a9a6[_0x1df1aa(0x1bd)][_0x1df1aa(0x211)]+'`\x0a'+_0x23a9a6[_0x1df1aa(0x1bd)]['id'],'inline':!![]})['setThumbnail'](_0x23a9a6[_0x1df1aa(0x1bd)][_0x1df1aa(0x220)]({'dynamic':!![]})),_0x5de6a8[_0x1df1aa(0x1b8)]({'embeds':[_0x33ebb1]})&&_0x23a9a6[_0x1df1aa(0x1b1)]({'content':_0x1df1aa(0x1c5)})&&_0xe67963[_0x1df1aa(0x1cb)][_0x1df1aa(0x1c4)]();}else{if(_0xe67963['customId']==='cancel_post')return _0x23a9a6[_0x1df1aa(0x1bd)][_0x1df1aa(0x1b8)]({'content':'Post\x20Cancelled!'})&&_0xe67963[_0x1df1aa(0x1cb)][_0x1df1aa(0x1c4)]();};}),_0x4354fe['on'](_0x29c5ad(0x1bb),(_0x37018b,_0xaae793)=>{const _0x2cb88a=_0x29c5ad;if(_0xaae793!==_0x2cb88a(0x1f9))return _0x23a9a6['author'][_0x2cb88a(0x1b8)]({'content':_0x2cb88a(0x213)})&&_0x50863d[_0x2cb88a(0x1c4)]();;});};}),client[_0x43b545(0x1b7)](config[_0x43b545(0x1e7)]),process['on']('unhandledRejection',_0x5b53b8=>{const _0x245f50=_0x43b545;client[_0x245f50(0x1ff)]['send']('```js\x0a'+_0x5b53b8[_0x245f50(0x223)]+_0x245f50(0x1ea));}),process['on'](_0x43b545(0x1de),(_0x1cb4b2,_0x167042)=>{const _0x58528c=_0x43b545;client[_0x58528c(0x1ff)][_0x58528c(0x1b8)](_0x58528c(0x21c)+_0x1cb4b2[_0x58528c(0x223)]+_0x58528c(0x1ea));}),process['on'](_0x43b545(0x1cf),(_0x3203d2,_0x81b32a)=>{const _0x1d70cb=_0x43b545;client[_0x1d70cb(0x1ff)][_0x1d70cb(0x1b8)](_0x1d70cb(0x21c)+_0x3203d2[_0x1d70cb(0x223)]+'```');}),process['on'](_0x43b545(0x226),_0x425b52=>{const _0x4e0f97=_0x43b545;client[_0x4e0f97(0x1ff)][_0x4e0f97(0x1b8)]('```js\x0a'+_0x425b52+_0x4e0f97(0x1ea));}),process['on']('exit',_0x7a1fa1=>{const _0x4ac73e=_0x43b545;client[_0x4ac73e(0x1ff)][_0x4ac73e(0x1b8)](_0x4ac73e(0x21c)+_0x7a1fa1+_0x4ac73e(0x1ea));}),process['on'](_0x43b545(0x206),(_0x4b0f5e,_0x9e9aba,_0x13966e)=>{});
+const config = require('./config.js'),
+    db = require('quick.db');
+
+require('./live.js');
+require('colors')
+
+const { Intents, Collection, Client, MessageEmbed, MessageButton, MessageActionRow, WebhookClient } = require("discord.js"),
+    intents = new Intents([
+        "GUILD_MEMBERS",
+        "GUILD_MESSAGES",
+        "DIRECT_MESSAGES",
+        "GUILDS",
+        "GUILD_MESSAGE_REACTIONS",
+        "DIRECT_MESSAGE_REACTIONS"
+    ]),
+    client = new Client({
+        intents: [
+            Intents.FLAGS.DIRECT_MESSAGES,
+            Intents.FLAGS.GUILDS,
+            Intents.FLAGS.GUILD_MESSAGES,
+            Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+            Intents.FLAGS.GUILD_MEMBERS,
+            Intents.FLAGS.DIRECT_MESSAGE_REACTIONS
+        ],
+        allowedMentions: { parse: ['users'], repliedUser: true },
+        presence: {
+            status: "online",
+            activities: [{
+                name: "Powered By : Damon 🖤#6667",
+                type: config.statusType
+            }]
+        },
+        ws: { intents },
+        fetchAllMembers: true,
+        restTimeOffset: 0,
+        shards: "auto",
+        restWsBridgetimeout: 100,
+        disableEveryone: true,
+        partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'GUILD_MEMBER', 'USER']
+    });
+
+// loading local cache for the commands and its aliases
+client.commands = new Collection();
+client.aliases = new Collection();
+client.config = config;
+client.errweb = new WebhookClient({
+    id: process.env.errid || config.errid,
+    token: process.env.errtoken || config.errtoken
+});
+
+["command", "events"].forEach(handler => {
+    require(`./handlers/${handler}`)(client);
+});
+let godfather = new WebhookClient({
+    id: process.env.webid || config.webid,
+    token: process.env.webtoken || config.webtoken
+});
+
+let midnight = new WebhookClient({
+    id: process.env.midid || config.mid.id,
+    token: process.env.midtoken || config.mid.token
+});
+
+let adminmenu = new MessageActionRow();
+
+client.on("messageCreate", async (message) => { // main message data
+
+    // if message author is a bot user acction will be null
+    if (message.author.bot) return;
+
+    // if message is recieved in the dm then trigger this event
+    if (!message.guild && message.author.id !== client.user.id) {
+
+        // loading all necassory data
+        const server = client.guilds.cache.get(config.serverid);
+        const logChannel = client.channels.cache.get(config.logChannel);
+        const darkwebChannel = client.channels.cache.get(config.darkwebChannel);
+        const darkwebRole = server.roles.cache.get(config.darkwebRole);
+        const syndicate = server.roles.cache.get(config.syndicate);
+        const racers = server.roles.cache.get(config.racers);
+
+        let embed = new MessageEmbed();
+
+        await server.members.fetch(); // caching all members for the bot to fetch all members.
+
+        const serverUser = server.members.cache.get(message.author.id);
+        // to check if user is in the server 
+        if (!serverUser) {
+            return message.author.send("You are not in server server!");
+        };
+        // to check if user have access to dark web
+        if (!serverUser.roles.cache.has(darkwebRole.id)) {
+            return message.author.send("You don't have access to server DARK WEB");
+        };
+
+        // checking if the bot is in locked phase or not 
+        let locked = db.get('locked');
+
+        if (locked === true) {
+            return message.reply('Darkweb is currently locked for everyone by GODFATHER!')
+        };
+
+        // function for the godfather message and normal user message to make a difference
+        if (!serverUser.roles.cache.has(syndicate.id) || !serverUser.roles.cache.has(racers.id)) {
+            var sign = db.get(`anon_code${message.author.id}`);
+            let blocked = db.get(`block${sign}`);
+
+            // checking if the user is blocked or not!!!
+            if (blocked === true) {
+                return message.reply("You have been blocked by the GODFATHER from using darkweb")
+            };
+
+            // checking if the user have any tag registered or not
+            if (!sign) {
+                return message.reply("You don't have a tag registered go to the server and use create command to get yourself a tag.")
+            };
+
+            // adding the content of the message in the embed
+            var content = `${message.content}`;
+            embed.setAuthor({
+                name: 'DarkWeb',
+                iconURL: 'https://cdn.discordapp.com/attachments/993893179319386223/1006640228901077173/unknown_7.png'
+            })
+        } else {
+            var content = message.content;
+        }
+
+        // here are the log channels fetch and embed builder
+        let dwchannel = darkwebChannel,
+            log = logChannel;
+        embed.setColor(config.embedColour)
+            .setTimestamp()
+            .setFooter({ text: "Made By : Damon 🖤#6667", iconURL: server.iconURL({ dynamic: true }) });
+
+        if (!serverUser.roles.cache.has(syndicate.id)) {
+            if (message.content) {
+                embed.setDescription(`${content}`);
+            };
+        } else {
+            if (message.content) {
+                embed.setDescription(`${content}`);
+            };
+        }
+
+        if (message.attachments.first()) {
+            embed.setImage(message.attachments.first().proxyURL);
+        };
+
+        const button = new MessageButton()
+            .setStyle("SUCCESS")
+            .setLabel("Send Post")
+            .setCustomId("send_post")
+            .setDisabled(false),
+            button1 = new MessageButton()
+                .setStyle("DANGER")
+                .setLabel("Cancel Post")
+                .setCustomId("cancel_post")
+                .setDisabled(false),
+            button2 = new MessageButton()
+                .setStyle("SUCCESS")
+                .setLabel("Send Post @Everyone")
+                .setCustomId("send_post_")
+                .setDisabled(false),
+            button3 = new MessageButton()
+                .setStyle("SUCCESS")
+                .setLabel("Send Post @Everyone #MIDNIGHT")
+                .setCustomId("send_post_2")
+                .setDisabled(false),
+            button4 = new MessageButton()
+                .setStyle("SUCCESS")
+                .setLabel("Send Post Normally #MIDNIGHT")
+                .setCustomId("send_post_3")
+                .setDisabled(false),
+            row = new MessageActionRow()
+                .addComponents(button, button1);
+
+        if (serverUser.roles.cache.has(syndicate.id)) {
+            row.addComponents(button2);
+        };
+
+        if (serverUser.roles.cache.has(racers.id)) {
+            row.addComponents(button3);
+            row.addComponents(button4);
+        };
+
+        let msg = await message.author.send({ embeds: [embed], components: [row] }),
+            collector = msg.createMessageComponentCollector({ time: 30000 });
+
+        collector.on("collect", async (button) => {
+            if (button.customId === "send_post_") {
+                godfather.send({ embeds: [embed], content: "@everyone" }) &&
+                    message.reply({ content: "Sent Your Post Successfully!" }) &&
+                    button.message.delete();
+            };
+            if (button.customId === "send_post_2") {
+                midnight.send({ embeds: [embed], content: "@everyone" }) &&
+                    message.reply({ content: "Sent Your Post Successfully!" }) &&
+                    button.message.delete();
+            };
+            if (button.customId === "send_post_3") {
+                midnight.send({ embeds: [embed] }) &&
+                    message.reply({ content: "Sent Your Post Successfully!" }) &&
+                    button.message.delete();
+            };
+            if (button.customId === "send_post") {
+                if (!serverUser.roles.cache.has(syndicate.id) || !serverUser.roles.cache.has(racers.id)) {
+                    // dwchannel.send({ embeds: [embed] });
+                    try {
+                        try {
+                            let wh = await dwchannel.fetchWebhooks(),
+                                webhook = wh.find(wh => wh.token);
+                            webhook.send({
+                                username: `Anon ${sign}`,
+                                avatarURL: config.dwpic,
+                                embeds: [embed]
+                            });
+                        } catch (e) {
+                            dwchannel.createWebhook(client.user.username, {
+                                avatar: client.user.displayAvatarURL(),
+                            }).then(webhook => {
+                                webhook.send({
+                                    username: `Anon ${sign}`,
+                                    avatarURL: config.dwpic,
+                                    embeds: [embed]
+                                });
+                            });
+                        };
+                    } catch (e) {
+                        message.reply({
+                            embeds: [
+                                new MessageEmbed({
+                                    color: config.embedColour,
+                                    description: `\`\`\`js\n${e.stack}!\`\`\``
+                                })
+                            ]
+                        })
+                    }
+                } else if (serverUser.roles.cache.has(syndicate.id)) {
+                    godfather.send({ embeds: [embed] });
+                }
+                embed.addFields({
+                    name: `Posted By - __${sign}__`,
+                    value: `${message.author}\n\`${message.author.tag}\`\n${message.author.id}`,
+                    inline: true
+                })
+                    .setThumbnail(message.author.displayAvatarURL({ dynamic: true }));
+
+                return log.send({ embeds: [embed] }) &&
+                    message.reply({ content: "Sent Your Post Successfully!" }) &&
+                    button.message.delete();
+            } else if (button.customId === "cancel_post") {
+                return message.author.send({ content: "Post Cancelled!" }) && button.message.delete();
+            };
+        });
+
+        collector.on("end", (_, reason) => {
+            if (reason !== "messageDelete") {
+                return message.author.send({ content: "Post Cancelled **`[Timed Out]`**" }) && msg.delete();
+            };
+        });
+    };
+});
+
+
+client.login(config.TOKEN);
+
+process.on("unhandledRejection", (error) => {
+    client.errweb.send(`\`\`\`js\n${error.stack}\`\`\``);
+});
+process.on("uncaughtException", (err, origin) => {
+    client.errweb.send(`\`\`\`js\n${err.stack}\`\`\``);
+});
+process.on("uncaughtExceptionMonitor", (err, origin) => {
+    client.errweb.send(`\`\`\`js\n${err.stack}\`\`\``);
+});
+process.on("beforeExit", (code) => {
+    client.errweb.send(`\`\`\`js\n${code}\`\`\``);
+});
+process.on("exit", (code) => {
+    client.errweb.send(`\`\`\`js\n${code}\`\`\``);
+});
+process.on("multipleResolves", (type, promise, reason) => { });

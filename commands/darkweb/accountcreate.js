@@ -1,1 +1,99 @@
-const _0x2466ce=_0x2e86;(function(_0x2179aa,_0x36b270){const _0x59fcfd=_0x2e86,_0x2f5969=_0x2179aa();while(!![]){try{const _0x42eaba=parseInt(_0x59fcfd(0x101))/0x1+parseInt(_0x59fcfd(0x125))/0x2*(parseInt(_0x59fcfd(0x10b))/0x3)+-parseInt(_0x59fcfd(0x119))/0x4+-parseInt(_0x59fcfd(0xfd))/0x5+parseInt(_0x59fcfd(0x10d))/0x6+parseInt(_0x59fcfd(0x11d))/0x7*(-parseInt(_0x59fcfd(0x131))/0x8)+-parseInt(_0x59fcfd(0x11c))/0x9;if(_0x42eaba===_0x36b270)break;else _0x2f5969['push'](_0x2f5969['shift']());}catch(_0x386de3){_0x2f5969['push'](_0x2f5969['shift']());}}}(_0x2b35,0x24281));const discord=require(_0x2466ce(0x108)),{MessageButton,MessageActionRow}=require('discord.js'),db=require('quick.db');module[_0x2466ce(0xfc)]={'name':'accountcreate','aliases':['create'],'description':_0x2466ce(0x118),'category':'Account','usage':_0x2466ce(0x11b),'botPermissions':[_0x2466ce(0x113)],'userPermissions':[],async 'run'(_0x3d3258,_0x9ccae5,_0x2afb45){const _0x2aad78=_0x2466ce;setTimeout(()=>_0x9ccae5[_0x2aad78(0x10a)]()[_0x2aad78(0x124)](()=>null),0x1388);if(!_0x9ccae5['member'][_0x2aad78(0x120)][_0x2aad78(0x136)][_0x2aad78(0x135)](_0x3d3258[_0x2aad78(0x100)][_0x2aad78(0x114)]))return _0x9ccae5[_0x2aad78(0xfe)][_0x2aad78(0x11a)](_0x2aad78(0x121));;if(!_0x2afb45[0x0])return _0x9ccae5['reply']('You\x20forgot\x20to\x20mention\x20you\x20tag\x20that\x20you\x20want\x20for\x20you\x20dark\x20web\x20account')[_0x2aad78(0xff)](_0x50caf0=>setTimeout(()=>_0x50caf0[_0x2aad78(0x10a)]()[_0x2aad78(0x124)](()=>null),0x1388));;if(isNaN(_0x2afb45[0x0]))return _0x9ccae5[_0x2aad78(0x123)]('You\x20can\x20only\x20use\x20numbers\x20as\x20your\x20tag!')['then'](_0x2af956=>setTimeout(()=>_0x2af956[_0x2aad78(0x10a)]()[_0x2aad78(0x124)](()=>null),0x1388));let _0x106e28=db[_0x2aad78(0x129)](_0x2aad78(0x12c)+_0x9ccae5[_0x2aad78(0xfe)]['id']),_0x5d08b4=db['get'](_0x2afb45[0x0]);if(_0x106e28)return _0x9ccae5['reply'](_0x2aad78(0x116)+_0x106e28)[_0x2aad78(0xff)](_0xdc128c=>setTimeout(()=>_0xdc128c['delete']()[_0x2aad78(0x124)](()=>null),0x1388));;if(_0x5d08b4===!![])return _0x9ccae5[_0x2aad78(0x123)](_0x2aad78(0x105));;const _0x3caf2c=new MessageButton()[_0x2aad78(0x10e)](_0x2aad78(0x12e))[_0x2aad78(0x109)](_0x2aad78(0x112))[_0x2aad78(0x127)](_0x2aad78(0x106))[_0x2aad78(0x134)](![]),_0x5ca346=new MessageButton()['setStyle'](_0x2aad78(0x130))[_0x2aad78(0x109)]('NO')[_0x2aad78(0x127)](_0x2aad78(0x110))['setDisabled'](![]),_0x3b4bdc=new MessageActionRow()[_0x2aad78(0x132)](_0x3caf2c,_0x5ca346);let _0x2aab52=await _0x9ccae5[_0x2aad78(0x123)]({'content':_0x2aad78(0x128)+_0x2afb45[0x0]+_0x2aad78(0x12f),'components':[_0x3b4bdc]}),_0x6194ff=_0x2aab52[_0x2aad78(0x12a)]({'time':0x7530});_0x6194ff['on'](_0x2aad78(0x12b),async _0x46ef7a=>{const _0x55fcc2=_0x2aad78;if(_0x46ef7a[_0x55fcc2(0x102)]['id']!==_0x9ccae5[_0x55fcc2(0xfe)]['id'])return _0x46ef7a[_0x55fcc2(0x123)]({'ephemeral':!![],'content':_0x55fcc2(0x10c)});if(_0x46ef7a[_0x55fcc2(0x137)]===_0x55fcc2(0x106)){db[_0x55fcc2(0x11f)](_0x55fcc2(0x12c)+_0x9ccae5[_0x55fcc2(0xfe)]['id'],_0x2afb45[0x0]),db[_0x55fcc2(0x11f)](_0x2afb45[0x0],!![]),db['set'](_0x55fcc2(0x107)+_0x2afb45[0x0],_0x9ccae5['author']['id']);let _0x52e04f=_0x3d3258[_0x55fcc2(0x122)][_0x55fcc2(0x136)][_0x55fcc2(0x129)](_0x3d3258[_0x55fcc2(0x100)][_0x55fcc2(0x133)]);return _0x52e04f[_0x55fcc2(0x11a)]({'embeds':[new discord[(_0x55fcc2(0x103))]({'description':_0x55fcc2(0x10f)+_0x2afb45[0x0]+_0x55fcc2(0x115)+_0x9ccae5['author'],'color':_0x3d3258[_0x55fcc2(0x100)][_0x55fcc2(0x12d)]})]}),_0x46ef7a[_0x55fcc2(0x123)]({'content':_0x55fcc2(0x10f)+_0x2afb45[0x0],'ephemeral':!![]})&&setTimeout(()=>_0x46ef7a[_0x55fcc2(0x111)][_0x55fcc2(0x10a)]()[_0x55fcc2(0x124)](()=>null),0x64);};if(_0x46ef7a[_0x55fcc2(0x137)]===_0x55fcc2(0x110))return _0x46ef7a[_0x55fcc2(0x111)][_0x55fcc2(0x10a)]();;}),_0x6194ff['on'](_0x2aad78(0x117),(_0x1ed3a5,_0x4566ce)=>{const _0x3b7c1f=_0x2aad78;if(_0x4566ce!==_0x3b7c1f(0x126))return _0x3caf2c[_0x3b7c1f(0x134)](!![]),_0x5ca346[_0x3b7c1f(0x134)](!![]),_0x2aab52[_0x3b7c1f(0x104)]({'content':_0x3b7c1f(0x11e),'components':[_0x3b4bdc]})[_0x3b7c1f(0xff)](_0xd30308=>setTimeout(()=>_0xd30308[_0x3b7c1f(0x10a)]()[_0x3b7c1f(0x124)](()=>null),0x1388));;});}};function _0x2e86(_0x3f71c3,_0x14e404){const _0x2b35fd=_0x2b35();return _0x2e86=function(_0x2e86e7,_0x8de8b7){_0x2e86e7=_0x2e86e7-0xfc;let _0x41da77=_0x2b35fd[_0x2e86e7];return _0x41da77;},_0x2e86(_0x3f71c3,_0x14e404);}function _0x2b35(){const _0x5d9a86=['This\x20Tag\x20Is\x20Already\x20Registered\x20By\x20Someone\x20Else','create_success','acc_user','discord.js','setLabel','delete','213471LRsIIX','This\x20interaction\x20is\x20not\x20fot\x20you!','1672104gJegWj','setStyle','Account\x20Created\x20','create_cancel','message','YES','EMBED_LINKS','darkwebRole','\x20By\x20','You\x20ALready\x20Have\x20A\x20Tag\x20Registered\x20That\x20Is\x20-\x20','end','helps\x20you\x20see\x20the\x20last\x20message\x20which\x20got\x20deleted','285916jcarjA','send','acreate\x20`tag_here`','323352lOXWzy','7XrENji','**`[Command\x20Timed\x20Out]`**','set','roles','You\x20don\x27t\x20have\x20access\x20to\x20server\x20DARK\x20WEB','channels','reply','catch','2uecjlo','messageDelete','setCustomId','Are\x20you\x20sure\x20you\x20want\x20to\x20create\x20','get','createMessageComponentCollector','collect','anon_code','embedColour','SUCCESS','\x20as\x20your\x20account!','DANGER','46808ggfBzP','addComponents','accountlog','setDisabled','has','cache','customId','exports','624435NQbCgW','author','then','config','36401TIoaiG','user','MessageEmbed','edit'];_0x2b35=function(){return _0x5d9a86;};return _0x2b35();}
+const discord = require("discord.js"),
+    { MessageButton, MessageActionRow } = require('discord.js'),
+    db = require(`quick.db`);
+
+module.exports = {
+    name: "accountcreate",
+    aliases: ["create"],
+    description: "helps you see the last message which got deleted",
+    category: "Account",
+    usage: "acreate `tag_here`",
+    botPermissions: ["EMBED_LINKS"],
+    userPermissions: [],
+
+    async run(client, message, args) {
+        setTimeout(() => message.delete().catch(() => null), 5000);
+
+        if (!message.member.roles.cache.has(client.config.darkwebRole)) {
+            return message.author.send("You don't have access to server DARK WEB");
+        };
+
+        if (!args[0]) {
+            return message.reply("You forgot to mention you tag that you want for you dark web account")
+                .then(m => setTimeout(() => m.delete().catch(() => null), 5000));
+        };
+
+        if (isNaN(args[0])) {
+            return message.reply("You can only use numbers as your tag!")
+                .then(m => setTimeout(() => m.delete().catch(() => null), 5000));
+        }
+
+        let tag = db.get(`anon_code${message.author.id}`),
+            tag_use = db.get(args[0]);
+
+        if (tag) {
+            return message.reply(`You ALready Have A Tag Registered That Is - ${tag}`)
+                .then(m => setTimeout(() => m.delete().catch(() => null), 5000));
+        };
+
+        if (tag_use === true) {
+            return message.reply("This Tag Is Already Registered By Someone Else");
+        };
+
+        const button = new MessageButton()
+            .setStyle("SUCCESS")
+            .setLabel("YES")
+            .setCustomId("create_success")
+            .setDisabled(false),
+            button1 = new MessageButton()
+                .setStyle("DANGER")
+                .setLabel("NO")
+                .setCustomId("create_cancel")
+                .setDisabled(false),
+            row = new MessageActionRow()
+                .addComponents(button, button1);
+
+        let msg = await message.reply({ content: `Are you sure you want to create ${args[0]} as your account!`, components: [row] }),
+            collector = msg.createMessageComponentCollector({ time: 30000 });
+
+        collector.on("collect", async (button) => {
+
+            if (button.user.id !== message.author.id) {
+                return button.reply({ ephemeral: true, content: `This interaction is not fot you!` });
+            }
+
+            if (button.customId === "create_success") {
+
+                // saving the data in the data base
+                db.set(`anon_code${message.author.id}`, args[0]);
+                db.set(args[0], true);
+                db.set(`acc_user${args[0]}`, message.author.id);
+
+                // sending logs and repllying the user that all the data is saved and his account is created
+                let log = client.channels.cache.get(client.config.accountlog);
+                log.send({
+                    embeds: [
+                        new discord.MessageEmbed({
+                            description: `Account Created ${args[0]} By ${message.author}`,
+                            color: client.config.embedColour
+                        })
+                    ]
+                });
+
+                return button.reply({ content: `Account Created ${args[0]}`, ephemeral: true }) &&
+                    setTimeout(() => button.message.delete().catch(() => null), 100);
+            };
+            if (button.customId === 'create_cancel') {
+                return button.message.delete();
+            };
+        });
+        collector.on("end", (_, reason) => {
+            if (reason !== "messageDelete") {
+                button.setDisabled(true);
+                button1.setDisabled(true);
+                return msg.edit({ content: "**`[Command Timed Out]`**", components: [row] })
+                    .then(m => setTimeout(() => m.delete().catch(() => null), 5000));
+            };
+        });
+    },
+};

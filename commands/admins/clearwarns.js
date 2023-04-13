@@ -1,1 +1,94 @@
-function _0x1a2e(_0x10ec78,_0x8db2a){const _0x513cba=_0x513c();return _0x1a2e=function(_0x1a2ee0,_0x25cbb2){_0x1a2ee0=_0x1a2ee0-0x6f;let _0x5a4ddf=_0x513cba[_0x1a2ee0];return _0x5a4ddf;},_0x1a2e(_0x10ec78,_0x8db2a);}const _0x3ea867=_0x1a2e;(function(_0x2f3f9c,_0x4dcc15){const _0x8fbde5=_0x1a2e,_0x9e4cfe=_0x2f3f9c();while(!![]){try{const _0x22c7c9=parseInt(_0x8fbde5(0x77))/0x1*(parseInt(_0x8fbde5(0xa3))/0x2)+-parseInt(_0x8fbde5(0x90))/0x3*(parseInt(_0x8fbde5(0xa8))/0x4)+parseInt(_0x8fbde5(0x88))/0x5+parseInt(_0x8fbde5(0x8a))/0x6*(-parseInt(_0x8fbde5(0x85))/0x7)+parseInt(_0x8fbde5(0x71))/0x8+parseInt(_0x8fbde5(0x9e))/0x9*(-parseInt(_0x8fbde5(0x97))/0xa)+-parseInt(_0x8fbde5(0x79))/0xb*(-parseInt(_0x8fbde5(0xa5))/0xc);if(_0x22c7c9===_0x4dcc15)break;else _0x9e4cfe['push'](_0x9e4cfe['shift']());}catch(_0x174c9f){_0x9e4cfe['push'](_0x9e4cfe['shift']());}}}(_0x513c,0x5b3bd));const discord=require(_0x3ea867(0x89)),{MessageButton,MessageActionRow}=require('discord.js'),db=require(_0x3ea867(0x7a));function _0x513c(){const _0x121f06=['member','16bZAyNB','DANGER','1552804dvajcV','quick.db','tag','acreate\x20`tag_here`','YES','setDisabled','Are\x20you\x20sure\x20you\x20want\x20to\x20clear\x20warns\x20of\x20','embedColour','edit','get','EMBED_LINKS','delete','7VUCBoE','warns','channels','454230ptwLxf','discord.js','107322kqNWLu','exports','cwarn_cancel','Warnings\x20cleared\x20of\x20','cwarn_success','fetch','25419EOSAMH','cache','\x0aThis\x20user\x20had\x20','catch','cwarn','guild','createMessageComponentCollector','41890DRrEsW','setLabel','wdlog','end','author','You\x20forgot\x20to\x20mention\x20the\x20tag','Cleard\x20all\x20warns\x20of\x20','1179xIExQu','adminrole','/3\x20warnings!','config','acc_user','67982PuJNEN','SUCCESS','24VenQzR','Account','user','100qVNDKl','collect','addComponents','setStyle','This\x20interaction\x20is\x20not\x20fot\x20you!','block','reply','This\x20Tag\x20Is\x20Not\x20In\x20Use','customId','1881072FNrSNC','\x20-\x20`','**`[Command\x20Timed\x20Out]`**','messageDelete','MessageEmbed'];_0x513c=function(){return _0x121f06;};return _0x513c();}module[_0x3ea867(0x8b)]={'name':'clearwarn','aliases':['cwarns',_0x3ea867(0x94)],'description':'helps\x20you\x20see\x20the\x20last\x20message\x20which\x20got\x20deleted','category':_0x3ea867(0xa6),'usage':_0x3ea867(0x7c),'botPermissions':[_0x3ea867(0x83)],'userPermissions':[],async 'run'(_0x53b0cf,_0x43826f,_0x4e2569){const _0x3ea605=_0x3ea867;if(!_0x43826f[_0x3ea605(0x76)]['roles'][_0x3ea605(0x91)][_0x3ea605(0x82)](_0x53b0cf[_0x3ea605(0xa1)][_0x3ea605(0x9f)]))return _0x43826f[_0x3ea605(0xae)]('This\x20Command\x20Is\x20For\x20Admins\x20Only!');;if(!_0x4e2569[0x0])return _0x43826f[_0x3ea605(0xae)](_0x3ea605(0x9c));;let _0x3a76c7=db[_0x3ea605(0x82)](_0x4e2569[0x0]);if(_0x3a76c7!==!![])return _0x43826f[_0x3ea605(0xae)](_0x3ea605(0x6f));;const _0x2a8429=new MessageButton()[_0x3ea605(0xab)](_0x3ea605(0xa4))[_0x3ea605(0x98)](_0x3ea605(0x7d))['setCustomId'](_0x3ea605(0x8e))[_0x3ea605(0x7e)](![]),_0x1705ab=new MessageButton()['setStyle'](_0x3ea605(0x78))[_0x3ea605(0x98)]('NO')['setCustomId'](_0x3ea605(0x8c))['setDisabled'](![]),_0x547769=new MessageActionRow()[_0x3ea605(0xaa)](_0x2a8429,_0x1705ab);let _0x28a162=await _0x43826f[_0x3ea605(0xae)]({'content':_0x3ea605(0x7f)+_0x4e2569[0x0]+'!','components':[_0x547769]}),_0x191acc=_0x28a162[_0x3ea605(0x96)]({'time':0x7530});_0x191acc['on'](_0x3ea605(0xa9),async _0x3a6d21=>{const _0x506a15=_0x3ea605;if(_0x3a6d21[_0x506a15(0xa7)]['id']!==_0x43826f[_0x506a15(0x9b)]['id'])return _0x3a6d21[_0x506a15(0xae)]({'ephemeral':!![],'content':_0x506a15(0xac)});;if(_0x3a6d21[_0x506a15(0x70)]===_0x506a15(0x8e)){let _0x52c654=db[_0x506a15(0x82)](_0x506a15(0x86)+_0x4e2569[0x0]),_0x1e7e46=db[_0x506a15(0x82)]('block'+_0x4e2569[0x0]);!_0x52c654&&(_0x52c654='0');;db[_0x506a15(0x84)](_0x506a15(0x86)+_0x4e2569[0x0]);_0x1e7e46===!![]&&db[_0x506a15(0x84)](_0x506a15(0xad)+_0x4e2569[0x0]);;let _0x28f8b4=_0x53b0cf[_0x506a15(0x87)][_0x506a15(0x91)]['get'](_0x53b0cf['config'][_0x506a15(0x99)]),_0x254d14=db['get'](_0x506a15(0xa2)+_0x4e2569[0x0]),_0x3512f8=await _0x43826f[_0x506a15(0x95)]['members'][_0x506a15(0x8f)](_0x254d14);return _0x28f8b4['send']({'embeds':[new discord[(_0x506a15(0x75))]({'description':_0x506a15(0x8d)+_0x4e2569[0x0]+'\x20By\x20'+_0x43826f[_0x506a15(0x9b)]+_0x506a15(0x72)+_0x43826f[_0x506a15(0x9b)][_0x506a15(0x7b)]+'`\x20which\x20is\x20owned\x20by\x20'+_0x3512f8+_0x506a15(0x72)+_0x3512f8[_0x506a15(0xa7)]['tag']+'`\x0a'+_0x52c654+'/3\x20Warnings','color':_0x53b0cf[_0x506a15(0xa1)][_0x506a15(0x80)]})]}),_0x43826f[_0x506a15(0xae)](_0x506a15(0x9d)+_0x4e2569[0x0]+_0x506a15(0x92)+_0x52c654+_0x506a15(0xa0))&&_0x3a6d21['message'][_0x506a15(0x84)]();};if(_0x3a6d21['customId']===_0x506a15(0x8c))return _0x3a6d21['message'][_0x506a15(0x84)]();;}),_0x191acc['on'](_0x3ea605(0x9a),(_0x513bc5,_0x294f7c)=>{const _0x591ef5=_0x3ea605;if(_0x294f7c!==_0x591ef5(0x74))return _0x2a8429['setDisabled'](!![]),_0x1705ab[_0x591ef5(0x7e)](!![]),_0x28a162[_0x591ef5(0x81)]({'content':_0x591ef5(0x73),'components':[_0x547769]})['then'](_0xabc2f3=>setTimeout(()=>_0xabc2f3['delete']()[_0x591ef5(0x93)](()=>null),0x1388));;});}};
+const discord = require("discord.js"),
+    { MessageButton, MessageActionRow } = require('discord.js'),
+    db = require(`quick.db`);
+
+module.exports = {
+    name: "clearwarn",
+    aliases: ["cwarns", "cwarn"],
+    description: "helps you see the last message which got deleted",
+    category: "Account",
+    usage: "acreate `tag_here`",
+    botPermissions: ["EMBED_LINKS"],
+    userPermissions: [],
+
+    async run(client, message, args) {
+        if (!message.member.roles.cache.get(client.config.adminrole)) {
+            return message.reply("This Command Is For Admins Only!")
+        };
+
+        if (!args[0]) {
+            return message.reply("You forgot to mention the tag");
+        };
+
+        let tag_use = db.get(args[0]);
+
+        if (tag_use !== true) {
+            return message.reply("This Tag Is Not In Use");
+        };
+
+        const button = new MessageButton()
+            .setStyle("SUCCESS")
+            .setLabel("YES")
+            .setCustomId("cwarn_success")
+            .setDisabled(false),
+            button1 = new MessageButton()
+                .setStyle("DANGER")
+                .setLabel("NO")
+                .setCustomId("cwarn_cancel")
+                .setDisabled(false),
+            row = new MessageActionRow()
+                .addComponents(button, button1);
+
+        let msg = await message.reply({ content: `Are you sure you want to clear warns of ${args[0]}!`, components: [row] }),
+            collector = msg.createMessageComponentCollector({ time: 30000 });
+
+        collector.on("collect", async (button) => {
+
+            if (button.user.id !== message.author.id) {
+                return button.reply({ ephemeral: true, content: `This interaction is not fot you!` });
+            };
+
+            if (button.customId === "cwarn_success") {
+                let warns = db.get(`warns${args[0]}`),
+                    tag_block = db.get(`block${args[0]}`);
+
+                if (!warns) {
+                    warns = "0"
+                };
+
+                db.delete(`warns${args[0]}`);
+
+                if (tag_block === true) {
+                    db.delete(`block${args[0]}`);
+                };
+
+                let log = client.channels.cache.get(client.config.wdlog);
+                let acc_user = db.get(`acc_user${args[0]}`);
+                let owner = await message.guild.members.fetch(acc_user);
+
+                log.send({
+                    embeds: [
+                        new discord.MessageEmbed({
+                            description: `Warnings cleared of ${args[0]} By ${message.author} - \`${message.author.tag}\` which is owned by ${owner} - \`${owner.user.tag}\`\n${warns}/3 Warnings`,
+                            color: client.config.embedColour
+                        })
+                    ]
+                });
+                return message.reply(`Cleard all warns of ${args[0]}\nThis user had ${warns}/3 warnings!`) &&
+                    button.message.delete();
+            };
+
+            if (button.customId === "cwarn_cancel") {
+                return button.message.delete();
+            };
+        });
+        collector.on("end", (_, reason) => {
+            if (reason !== "messageDelete") {
+                button.setDisabled(true);
+                button1.setDisabled(true);
+                return msg.edit({ content: "**`[Command Timed Out]`**", components: [row] })
+                    .then(m => setTimeout(() => m.delete().catch(() => null), 5000));
+            };
+        });
+    },
+};
