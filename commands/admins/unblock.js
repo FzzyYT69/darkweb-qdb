@@ -61,7 +61,7 @@ module.exports = {
                 log.send({
                     embeds: [
                         new discord.MessageEmbed({
-                            description: `Account Unblocked ${args[0]} By ${message.author} - \`${message.author.tag}\` which is owned by ${owner} - \`${owner.user.tag}\``,
+                            description: `Account Unblocked ${args[0]} By <@${message.author}> - \`${message.author.tag}\` which is owned by <@${owner}> - \`${owner.user.tag}\``,
                             color: client.config.embedColour
                         })
                     ]

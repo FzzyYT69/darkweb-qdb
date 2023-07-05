@@ -1,4 +1,4 @@
-# **THIS IS THE DARK WEB BOT THAT IS MADE BY `Damon 🖤#6667`**
+# **THIS IS THE DARK WEB BOT THAT IS MADE BY `kool_damon`**
 ## __HOW TO SETUP AND USE THE BOT__
 
 ---

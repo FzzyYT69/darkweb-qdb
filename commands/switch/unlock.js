@@ -42,7 +42,14 @@ module.exports = {
             row = new MessageActionRow()
                 .addComponents(button, button1);
 
-        let msg = await message.reply({ content: `Are you sure you want unlock Darkweb for everyone!`, components: [row] }),
+        let msg = await message.reply({
+            embeds: [
+                new MessageEmbed({
+                    description: `Are you sure you want unlock Darkweb for everyone!`,
+                    color: client.config.embedColour
+                })
+            ], components: [row]
+        }),
             collector = msg.createMessageComponentCollector({ time: 30000 });
 
         collector.on("collect", async (button) => {

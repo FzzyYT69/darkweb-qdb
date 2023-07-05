@@ -14,8 +14,8 @@ module.exports.run = async (client, message) => {
         let mention = new MessageEmbed({
             description:
                 `Hey, ${client.user.username} here!\n\nPrefix for this server is \`${prefix}\`\n` +
-                `If you have any problem regarding bot join : \n[discord.gg/marvel](https://discord.gg/fqvQNDZYpj)\n` +
-                `This bot is made by [Damon 🖤#6667](https://discord.com/users/672027578181353473)`,
+                `For help join : \n[discord.gg/marvel](https://discord.gg/fqvQNDZYpj)\n` +
+                `The original Developer of Dark-Web Bot [kool_damon](https://discord.com/users/672027578181353473)`,
             color: config.embedColour
         });
 
@@ -25,7 +25,7 @@ module.exports.run = async (client, message) => {
                 embeds: [
                     new MessageEmbed({
                         description: `I need \`${p1.join(", ")}\` permissions in **\`${message.guild.name}\`**`,
-                        color: client.embed.cf,
+                        color: client.config.embedColor,
                         thumbnail: message.guild.iconURL({ dynamic: true })
                     })
                 ]
@@ -60,7 +60,7 @@ module.exports.run = async (client, message) => {
                         embeds: [
                             new MessageEmbed({
                                 description: `I need \`${p1.join(", ")}\` permissions in ${message.guild.name}`,
-                                color: client.embed.cf,
+                                color: client.config.embedColor,
                                 thumbnail: message.guild.iconURL({ dynamic: true })
                             })
                         ]

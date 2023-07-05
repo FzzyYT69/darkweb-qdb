@@ -24,9 +24,9 @@ const { Intents, Collection, Client, MessageEmbed, MessageButton, MessageActionR
         ],
         allowedMentions: { parse: ['users'], repliedUser: true },
         presence: {
-            status: "online",
+            status: "idle",
             activities: [{
-                name: "Powered By : Damon 🖤#6667",
+                name: "Powered By : kool_damon",
                 type: config.statusType
             }]
         },
@@ -37,7 +37,8 @@ const { Intents, Collection, Client, MessageEmbed, MessageButton, MessageActionR
         restWsBridgetimeout: 100,
         disableEveryone: true,
         partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'GUILD_MEMBER', 'USER']
-    });
+    }),
+    Timeout = new Collection();
 
 // loading local cache for the commands and its aliases
 client.commands = new Collection();
@@ -86,18 +87,40 @@ client.on("messageCreate", async (message) => { // main message data
         const serverUser = server.members.cache.get(message.author.id);
         // to check if user is in the server 
         if (!serverUser) {
-            return message.author.send("You are not in server server!");
+            return message.reply({
+                embeds: [
+                    new MessageEmbed({
+                        description: "You are not in server server!",
+                        color: client.config.embedColor,
+                    })
+                ]
+            })
         };
+
         // to check if user have access to dark web
         if (!serverUser.roles.cache.has(darkwebRole.id)) {
-            return message.author.send("You don't have access to server DARK WEB");
+            return message.reply({
+                embeds: [
+                    new MessageEmbed({
+                        description: "You don't have access to server DARK WEB!",
+                        color: client.config.embedColor,
+                    })
+                ]
+            })
         };
 
         // checking if the bot is in locked phase or not 
         let locked = db.get('locked');
 
         if (locked === true) {
-            return message.reply('Darkweb is currently locked for everyone by GODFATHER!')
+            return message.reply({
+                embeds: [
+                    new MessageEmbed({
+                        description: "Darkweb is currently locked for everyone by GODFATHER!",
+                        color: client.config.embedColor,
+                    })
+                ]
+            })
         };
 
         // function for the godfather message and normal user message to make a difference
@@ -107,12 +130,26 @@ client.on("messageCreate", async (message) => { // main message data
 
             // checking if the user is blocked or not!!!
             if (blocked === true) {
-                return message.reply("You have been blocked by the GODFATHER from using darkweb")
+                return message.reply({
+                    embeds: [
+                        new MessageEmbed({
+                            description: "You have been blocked by the GODFATHER from using darkweb",
+                            color: client.config.embedColor,
+                        })
+                    ]
+                })
             };
 
             // checking if the user have any tag registered or not
             if (!sign) {
-                return message.reply("You don't have a tag registered go to the server and use create command to get yourself a tag.")
+                return message.reply({
+                    embeds: [
+                        new MessageEmbed({
+                            description: "You don't have a tag registered go to the server and use create command to get yourself a tag.",
+                            color: client.config.embedColor,
+                        })
+                    ]
+                })
             };
 
             // adding the content of the message in the embed
@@ -130,7 +167,8 @@ client.on("messageCreate", async (message) => { // main message data
             log = logChannel;
         embed.setColor(config.embedColour)
             .setTimestamp()
-            .setFooter({ text: "Made By : Damon 🖤#6667", iconURL: server.iconURL({ dynamic: true }) });
+            .setThumbnail(message.guild.iconURL({ dynamic: true }))
+            .setFooter({ text: "Made By : kool_damon", iconURL: server.iconURL({ dynamic: true }) });
 
         if (!serverUser.roles.cache.has(syndicate.id)) {
             if (message.content) {
@@ -146,6 +184,22 @@ client.on("messageCreate", async (message) => { // main message data
             embed.setImage(message.attachments.first().proxyURL);
         };
 
+        Timeout.set(`cooldown${message.author.id}`, Date.now() + config.cooldown) &&
+            setTimeout(() => {
+                Timeout.delete(`cooldown${message.author.id}`);
+            }, config.cooldown);
+
+        if (Timeout.has(`cooldown${message.author.id}`)) {
+            return message.reply({
+                embeds: [
+                    new MessageEmbed({
+                        description: `You are on a \`${ms(Timeout.get(`cooldown${message.author.id}`) - Date.now(), { long: true })}\` cooldown.`,
+                        color: config.embedColour
+                    })
+                ]
+            }).then((m) => setTimeout(() => m.delete().catch(() => null), 3000));
+        };
+
         const button = new MessageButton()
             .setStyle("SUCCESS")
             .setLabel("Send Post")
@@ -157,17 +211,17 @@ client.on("messageCreate", async (message) => { // main message data
                 .setCustomId("cancel_post")
                 .setDisabled(false),
             button2 = new MessageButton()
-                .setStyle("SUCCESS")
+                .setStyle("PRIMARY")
                 .setLabel("Send Post @Everyone")
                 .setCustomId("send_post_")
                 .setDisabled(false),
             button3 = new MessageButton()
-                .setStyle("SUCCESS")
+                .setStyle("PRIMARY")
                 .setLabel("Send Post @Everyone #MIDNIGHT")
                 .setCustomId("send_post_2")
                 .setDisabled(false),
             button4 = new MessageButton()
-                .setStyle("SUCCESS")
+                .setStyle("SECONDARY")
                 .setLabel("Send Post Normally #MIDNIGHT")
                 .setCustomId("send_post_3")
                 .setDisabled(false),
@@ -239,10 +293,13 @@ client.on("messageCreate", async (message) => { // main message data
                     godfather.send({ embeds: [embed] });
                 }
                 embed.addFields({
-                    name: `Posted By - __${sign}__`,
-                    value: `${message.author}\n\`${message.author.tag}\`\n${message.author.id}`,
+                    name: `Posted By - **__${sign}__**`,
+                    value: `<@${message.author}>\n\`${message.author.tag}\`\n${message.author.id}`,
                     inline: true
                 })
+                    .setFooter({
+                        name: 'Made By : kool_damon', iconURL: message.guild.iconURL({ dynamic: true })
+                    })
                     .setThumbnail(message.author.displayAvatarURL({ dynamic: true }));
 
                 return log.send({ embeds: [embed] }) &&
@@ -262,7 +319,7 @@ client.on("messageCreate", async (message) => { // main message data
 });
 
 
-client.login(config.TOKEN);
+client.login(config.TOKEN).catch(e => console.log(e.stack))
 
 process.on("unhandledRejection", (error) => {
     client.errweb.send(`\`\`\`js\n${error.stack}\`\`\``);

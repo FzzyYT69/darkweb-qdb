@@ -74,9 +74,10 @@ module.exports = {
                 log.send({
                     embeds: [
                         new discord.MessageEmbed({
-                            description: `Account Created ${args[0]} By ${message.author}`,
+                            description: `Account Created ${args[0]} By <@${message.author}>\n${message.author.id}\n${message.author.tag}`,
                             color: client.config.embedColour
                         })
+                            .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
                     ]
                 });
 

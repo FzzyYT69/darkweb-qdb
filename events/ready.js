@@ -50,4 +50,6 @@ module.exports.run = async (client) => {
     if (logChannel) console.log(`${logChannel.name}`.green);
     if (darkwebChannel) console.log(`${darkwebChannel.name}`.green);
     if (darkwebRole) console.log(`${darkwebRole.name}`.green);
+
+    console.log('DARK WEB BOT BY kool_damon IS NOW READY TO BE USED'.bgRed)
 };
